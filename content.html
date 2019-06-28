@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script src="https://cdn.bootcss.com/jquery/1.7.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdn.bootcss.com/showdown/1.9.0/showdown.min.js"></script>
+    <style>
+        blockquote {
+            border-left: #eee solid 5px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 20px;
+        }
+
+        code {
+            color: #D34B62;
+            background: #F6F6F6;
+        }
+    </style>
 </head>
 
 <body>
@@ -267,7 +283,9 @@
             });
 
             $.get('./1.md', function (data) {
-                $('#content').html(data)
+                var converter = new showdown.Converter();
+                var html = converter.makeHtml(data);
+                $('#content').html(html)
             })
         });
     </script>
