@@ -249,7 +249,7 @@
         </section>
     </div>
 
-    <div class="container content is-medium" style="margin-top: 20px">
+    <div id="content" class="container content is-medium" style="margin-top: 20px">
         
     </div>
 
@@ -267,7 +267,7 @@
             });
 
             $.get('./1.md', function (data) {
-                console.log(data)
+                $('#content').html(data)
             })
         });
     </script>
