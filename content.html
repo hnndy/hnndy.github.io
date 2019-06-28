@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script src="https://cdn.bootcss.com/jquery/1.7.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar is-fixed-top is-dark">
+        <div class="container has-text-centered">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start" style="text-align: left">
+                    <a class="navbar-item">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span>
+                            首页
+                        </span>
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            <span class="icon">
+                                <i class="fab fa-servicestack"></i>
+                            </span>
+                            <span>
+                                后端
+                            </span>
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-php"></i>
+                                </span>
+                                <span>
+                                    Php
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </span>
+                                <span>
+                                    Composer
+                                </span>
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-phoenix-framework"></i>
+                                </span>
+                                <span>
+                                    框架
+                                </span>
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-laravel"></i>
+                                </span>
+                                <span>
+                                    Laravel
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </span>
+                                <span>
+                                    Thinkphp
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </span>
+                                <span>
+                                    CodeIgniter
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            前端
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-vuejs"></i>
+                                </span>
+                                <span>
+                                    Vue
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-node"></i>
+                                </span>
+                                <span>
+                                    NodeJs
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-html5"></i>
+                                </span>
+                                <span>
+                                    Html5
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-css3"></i>
+                                </span>
+                                <span>
+                                    Css3
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            <span>
+                                操作系统
+                            </span>
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-windows"></i>
+                                </span>
+                                <span>
+                                    Windows
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-ubuntu"></i>
+                                </span>
+                                Ubuntu
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-centos"></i>
+                                </span>
+                                Centos
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-apple"></i>
+                                </span>
+                                Mac
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fas fa-heart-rate"></i>
+                                </span>
+                                <span>
+                                    其他
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            <span>
+                                杂...
+                            </span>
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fas fa-atom"></i>
+                                </span>
+                                <span>
+                                    IDEA
+                                </span>
+                            </a>
+                            <a class="navbar-item">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>
+                                    Github
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div style="margin-top: 52px">
+        <section class="hero intro is-dark">
+            <div class="hero-body homepage-padding">
+                <div class="container">
+                    <div class="columns intro-columns">
+                        <div class="column">
+                            <div class="intro-column is-content">
+                                <h1 class="title">
+                                    Primary title
+                                </h1>
+                                <h2 class="subtitle">
+                                    Primary subtitle
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="intro-content">
+                                <figure class="image is-640x320">
+                                    <img src="https://bulma.io/images/placeholders/640x320.png">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container content is-medium" style="margin-top: 20px">
+        
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+
+            $.get('./1.md', function (data) {
+                console.log(data)
+            })
+        });
+    </script>
+</body>
+
+
+</html>
